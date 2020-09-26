@@ -27,6 +27,7 @@ export default function MediaCard({title, summary, link}) {
   return (
     <Card className={classes.root} variant="outlined">
       <CardActionArea>
+        <Link to={link}>
         <CardMedia
           className={classes.media}
           image=""
@@ -40,6 +41,7 @@ export default function MediaCard({title, summary, link}) {
             {summary} 
           </Typography>
         </CardContent>
+        </Link>
       </CardActionArea>
       <CardActions>
       <Link to ={link}>
