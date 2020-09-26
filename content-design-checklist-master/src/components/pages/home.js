@@ -19,10 +19,10 @@ export default function Home() {
           <MediaCard {...strategyData}/>
           <Typography variant="h5">Scope</Typography>
           <MediaCard {...scopeData} />
-          <Typography variant="h5">Skeleton</Typography>
-          <MediaCard {...skeletonData} />
           <Typography variant="h5">Structure</Typography>
           <MediaCard {...structureData} />
+          <Typography variant="h5">Skeleton</Typography>
+          <MediaCard {...skeletonData} />
           <Typography variant="h5">Surface</Typography>
           <MediaCard {...surfaceData} />
         </Grid>

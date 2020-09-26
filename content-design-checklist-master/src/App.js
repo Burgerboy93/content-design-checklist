@@ -30,11 +30,11 @@ function App() {
     <Route path="/scope">
       <Scope />
     </Route>
-    <Route path="/skeleton">
-      <Skeleton />
-    </Route>
     <Route path="/structure">
       <Structure />
+    </Route>
+    <Route path="/skeleton">
+      <Skeleton />
     </Route>
     <Route path="/surface">
       <Surface />
