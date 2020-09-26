@@ -8,9 +8,6 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import AddAll from './addall';
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import Checkbox from '@material-ui/core/Checkbox';
 
 
 const useStyles = makeStyles({
@@ -23,11 +20,9 @@ const useStyles = makeStyles({
   },
 });
 
-export default function MediaCard({title, summary, link}) {
+export default function MediaCard2({title, summary, link}) {
 
   const classes = useStyles();
-
-    
 
   return (
     <Card className={classes.root} variant="outlined">
@@ -52,7 +47,6 @@ export default function MediaCard({title, summary, link}) {
           Learn More
         </Button>
         </Link>
-
       </CardActions>
     </Card>
   );

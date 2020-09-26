@@ -23,11 +23,15 @@ const useStyles = makeStyles({
   },
 });
 
-export default function MediaCard({title, summary, link}) {
+export default function ChapterCard({title, pointOne, pointTwo, pointThree, link}) {
 
   const classes = useStyles();
+  const [checked, setChecked] = React.useState(false);
 
-    
+    const handleChange = (event) => {
+      console.log(event.target.name)
+      setChecked(event.target.checked);
+    };
 
   return (
     <Card className={classes.root} variant="outlined">
@@ -42,7 +46,13 @@ export default function MediaCard({title, summary, link}) {
             {title}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            {summary}
+            {pointOne}
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            {pointTwo}
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            {pointThree}
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -52,7 +62,17 @@ export default function MediaCard({title, summary, link}) {
           Learn More
         </Button>
         </Link>
-
+        <FormControlLabel
+          control={
+            <Checkbox
+              checked={checked}
+              onChange={handleChange}
+              name={title}
+              color="primary"
+            />
+          }
+          label={"Add to checklist"}
+        />
       </CardActions>
     </Card>
   );
