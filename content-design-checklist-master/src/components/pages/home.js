@@ -2,7 +2,7 @@ import React from "react";
 import Typography from "@material-ui/core/Typography";
 import MediaCard from "../categoryCard";
 import Grid from "@material-ui/core/Grid";
-import {strategyData, scopeData, structureData, skeletonData, surfaceData} from '../categoryData';
+import {strategyData, scopeData, structureData, skeletonData, surfaceData} from '../data/categoryData';
 
 
 

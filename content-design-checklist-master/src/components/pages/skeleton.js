@@ -2,7 +2,7 @@ import React from "react";
 import Typography from "@material-ui/core/Typography";
 import MediaCard from "../categoryCard";
 import Grid from "@material-ui/core/Grid";
-import {skeletonData} from '../categoryData'
+import {skeletonData} from '../data/categoryData'
 
 export default function Skeleton() {
     return(
