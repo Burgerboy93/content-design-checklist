@@ -3,7 +3,7 @@ import Typography from "@material-ui/core/Typography";
 import MediaCard from "../categoryCard";
 import Grid from "@material-ui/core/Grid";
 import {surfaceData} from '../data/categoryData'
-import {chapter89Data, chapter85Data, bonusData} from '../data/surfaceData'
+import {chapterData} from '../data/surfaceData'
 import ChapterCard from '../chaptercard';
 import AddAll from '../addall';
 import { makeStyles } from '@material-ui/core/styles';
@@ -42,11 +42,11 @@ export default function Scope() {
           <Typography variant="h5">Surface</Typography>
           <MediaCard {...surfaceData}/>
         </Grid>
-<div id="content">
+        <div id="content">
         <Grid container direction="row"   justify="center" alignItems="stretch" className="App" spacing={3}>
-        <ChapterCard {...chapter89Data}/>
-        <ChapterCard {...chapter85Data}/>
-        <ChapterCard {...bonusData}/>
+        {chapterData.map((chapter) =>(
+          <ChapterCard {...chapter} />
+        ))}
         <Grid container direction="column"   justify="center" alignItems="center" className="App" spacing={3}>
       <AddAll />
       </Grid>

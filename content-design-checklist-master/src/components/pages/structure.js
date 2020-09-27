@@ -4,7 +4,7 @@ import MediaCard from "../categoryCard";
 
 import Grid from "@material-ui/core/Grid";
 import {structureData} from '../data/categoryData'
-import {chapter52Data, chapter44Data} from '../data/structureData'
+import {chapterData } from '../data/structureData'
 import ChapterCard from '../chaptercard';
 import AddAll from '../addall';
 import { makeStyles } from '@material-ui/core/styles';
@@ -45,12 +45,11 @@ export default function Structure() {
         </Grid>
 
 
-<div id="content">
+        <div id="content">
         <Grid container direction="row"   justify="center" alignItems="stretch" className="App" spacing={3}>
-        <ChapterCard {...chapter52Data}/>
-        <ChapterCard {...chapter44Data}/>
-
-
+        {chapterData.map((chapter) =>(
+          <ChapterCard {...chapter} />
+        ))}
         <Grid container direction="column"   justify="center" alignItems="center" className="App" spacing={3}>
       <AddAll />
       </Grid>

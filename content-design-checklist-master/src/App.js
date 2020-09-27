@@ -1,7 +1,6 @@
-import React from "react";
+import React, {useState} from "react";
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import ButtonAppBar from "./components/navbar.js";
-import TemporaryDrawer from "./components/drawer.js";
 import "./App.css";
 import { Domain } from "@material-ui/icons";
 import Home from "./components/pages/home";
@@ -12,7 +11,9 @@ import Structure from "./components/pages/structure";
 import Surface from "./components/pages/surface";
 
 function App() {
+
   return (
+
     <Router>
     <div className="App">
       <header className="App-header">

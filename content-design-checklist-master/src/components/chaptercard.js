@@ -23,14 +23,15 @@ const useStyles = makeStyles({
   },
 });
 
-export default function ChapterCard({title, pointOne, pointTwo, pointThree, link}) {
+export default function ChapterCard({id, category, title, pointOne, pointTwo, pointThree, link}) {
 
   const classes = useStyles();
   const [checked, setChecked] = React.useState(false);
 
     const handleChange = (event) => {
-      console.log(event.target.name)
+      console.log({title});
       setChecked(event.target.checked);
+
     };
 
   return (

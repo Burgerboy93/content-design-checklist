@@ -1,3 +1,4 @@
-export const chapter97Data  =  {link: '/surface', title: 'Does it Work on Mobile?" is Obsolete', pointOne: 'Your software has to work on mobile. It is no longer optional.', pointTwo: 'This is made easier by modern front end frameworks.', pointThree:'Starting from a mobile first position can also help the overall design process.'};
-
-export const chapter44Data  =  {link: '/surface', title: 'If a Good Form Experience Can Be Delivered, Your Users will Love Your Product', pointOne: 'Do not ask for more information than you need.', pointTwo: 'The user should always know why you are collecting information and what you intend to do with it.', pointThree: 'Every additional field added to forms reduces conversion.'};
+export const chapterData = [
+    { id: 1, category: 'strategy', link: '/surface', title: 'Does it Work on Mobile?" is Obsolete', pointOne: 'Your software has to work on mobile. It is no longer optional.', pointTwo: 'This is made easier by modern front end frameworks.', pointThree: 'Starting from a mobile first position can also help the overall design process.' },
+    { id: 2, category: 'strategy', link: '/surface', title: 'If a Good Form Experience Can Be Delivered, Your Users will Love Your Product', pointOne: 'Do not ask for more information than you need.', pointTwo: 'The user should always know why you are collecting information and what you intend to do with it.', pointThree: 'Every additional field added to forms reduces conversion.' }
+];

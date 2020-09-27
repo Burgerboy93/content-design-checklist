@@ -4,7 +4,7 @@ import MediaCard from "../categoryCard";
 
 import Grid from "@material-ui/core/Grid";
 import {scopeData} from '../data/categoryData'
-import {bonusData} from '../data/scopeData'
+import {chapterData} from '../data/scopeData'
 import ChapterCard from '../chaptercard';
 import AddAll from '../addall';
 import { makeStyles } from '@material-ui/core/styles';
@@ -50,9 +50,11 @@ export default function Scope() {
 
 
 <div id="content">
-        <Grid container direction="row"   justify="center" alignItems="stretch" className="App" spacing={3}>
-        <ChapterCard {...bonusData}/>
 
+        <Grid container direction="row"   justify="center" alignItems="stretch" className="App" spacing={3}>
+        {chapterData.map((chapter) =>(
+          <ChapterCard {...chapter} />
+        ))}
 
         <Grid container direction="column"   justify="center" alignItems="center" className="App" spacing={3}>
       <AddAll />
