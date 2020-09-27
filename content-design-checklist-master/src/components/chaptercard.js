@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import {Link} from "react-router-dom";
 import Card from '@material-ui/core/Card';
@@ -26,7 +26,8 @@ const useStyles = makeStyles({
 export default function ChapterCard({id, category, title, pointOne, pointTwo, pointThree, link}) {
 
   const classes = useStyles();
-  const [checked, setChecked] = React.useState(false);
+  const [checked, setChecked] = React.useState();
+
 
     const handleChange = (event) => {
       console.log({title});

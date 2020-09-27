@@ -1,8 +1,7 @@
-import React, {useState} from "react";
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import React from "react";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import ButtonAppBar from "./components/navbar.js";
 import "./App.css";
-import { Domain } from "@material-ui/icons";
 import Home from "./components/pages/home";
 import Strategy from "./components/pages/strategy";
 import Scope from "./components/pages/scope";
