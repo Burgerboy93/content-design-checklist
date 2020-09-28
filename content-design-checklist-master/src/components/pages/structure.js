@@ -41,7 +41,9 @@ export default function Structure() {
           alignItems="center"
           justify="center"
         >
+        <div class="catHeading">
           <Typography variant="h5">Structure</Typography>
+          </div>
         </Grid>
         <div class="content">
         <Grid container direction="row"   justify="center" alignItems="stretch" className="App" spacing={3}>

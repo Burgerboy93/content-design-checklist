@@ -39,7 +39,9 @@ export default function Scope() {
         alignItems="center"
         justify="center"
       >
+      <div class="catHeading">
         <Typography variant="h5">Scope</Typography>
+        </div>
       </Grid>
 
 

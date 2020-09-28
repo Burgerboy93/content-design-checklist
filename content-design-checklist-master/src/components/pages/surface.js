@@ -41,7 +41,9 @@ export default function Scope() {
           alignItems="center"
           justify="center"
         >
+        <div class="catHeading">
           <Typography variant="h5">Surface</Typography>
+          </div>
         </Grid>
         <div id="content">
         <Grid container direction="row"   justify="center" alignItems="stretch" className="App" spacing={3}>
