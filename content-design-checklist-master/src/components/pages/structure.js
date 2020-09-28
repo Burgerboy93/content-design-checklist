@@ -32,7 +32,7 @@ const useStyles = makeStyles({
 export default function Structure() {
   const classes = useStyles();
     return(
-      <div>
+      <div class="structureContainer">
         <Grid
           container
           spacing={4}

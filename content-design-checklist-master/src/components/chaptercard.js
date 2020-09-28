@@ -47,13 +47,13 @@ export default function ChapterCard({id, category, title, pointOne, pointTwo, po
           <Typography gutterBottom variant="h6" component="h2">
             {title}
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography variant="body2" color="textPrimary" component="p">
             {pointOne}
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography variant="body2" color="textPrimary" component="p">
             {pointTwo}
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography variant="body2" color="textPrimary" component="p">
             {pointThree}
           </Typography>
         </CardContent>

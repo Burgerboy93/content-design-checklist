@@ -33,7 +33,7 @@ export default function Scope() {
 
   const classes = useStyles();
     return(
-      <div>
+      <div class="strategyContainer">
         <Grid
           container
           spacing={4}

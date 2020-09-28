@@ -17,6 +17,7 @@ const useStyles = makeStyles({
   root: {
     maxWidth: 345,
     margin: 20,
+    minWidth:250,
   },
   media: {
     height: 140,
@@ -27,7 +28,7 @@ export default function MediaCard({title, summary, link}) {
 
   const classes = useStyles();
 
-    
+
 
   return (
     <Card className={classes.root} variant="outlined">
@@ -41,7 +42,7 @@ export default function MediaCard({title, summary, link}) {
           <Typography gutterBottom variant="h6" component="h2">
             {title}
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography variant="body2" color="textPrimary" component="p">
             {summary}
           </Typography>
         </CardContent>

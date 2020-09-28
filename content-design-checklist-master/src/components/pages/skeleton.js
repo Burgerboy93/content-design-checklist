@@ -32,7 +32,7 @@ const useStyles = makeStyles({
 export default function Scope() {
   const classes = useStyles();
     return(
-      <div>
+      <div class="skeletonContainer">
         <Grid
           container
           spacing={4}

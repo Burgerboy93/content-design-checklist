@@ -1,0 +1,36 @@
+.strategyContainer{
+  width:100%;
+  background-color: #2C43B8;
+}
+
+.scopeContainer{
+  width:100%;
+  background-color: #445BC1;
+}
+.structureContainer{
+  width:100%;
+  background-color: #6987D5;
+}
+
+.skeletonContainer{
+  width:100%;
+  background-color: #97BAEC;
+}
+.surfaceContainer{
+  width:100%;
+  background-color: #BBDFFA;
+}
+
+.level{
+
+  width: 30%;
+  margin: 0 auto;
+
+
+}
+.heading{
+  text-align: center;
+}
+.Home{
+
+}

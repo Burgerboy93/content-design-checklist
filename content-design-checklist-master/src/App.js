@@ -17,12 +17,12 @@ function App() {
     <div className="App">
       <header className="App-header">
         <ButtonAppBar />
-        
+
       </header>
     </div>
     <Switch>
     <Route exact path="/">
-      <Home />
+      <Home/>
     </Route>
     <Route path="/strategy">
       <Strategy />
