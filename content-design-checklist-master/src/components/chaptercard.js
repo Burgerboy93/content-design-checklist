@@ -18,6 +18,7 @@ const useStyles = makeStyles({
   root: {
     maxWidth: 345,
     margin: 20,
+    height:450,
   },
   media: {
     height: 140,

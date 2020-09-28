@@ -31,7 +31,7 @@ export default function Scope() {
   });
 
   return (
-    <div>
+    <div class="Scope">
       <Grid
         container
         spacing={4}
@@ -42,33 +42,19 @@ export default function Scope() {
         <Typography variant="h5">Scope</Typography>
       </Grid>
 
-      <div id="content">
-        <Grid
-          container
-          direction="row"
-          justify="center"
-          alignItems="stretch"
-          className="App"
-          spacing={3}
-        >
-          {filterChapters.map((chapter) => (
-            <div key={filterChapters.id}>
-              <ChapterCard {...chapter} />
-            </div>
-          ))}
 
-          <Grid
-            container
-            direction="column"
-            justify="center"
-            alignItems="center"
-            className="App"
-            spacing={3}
-          >
-            <AddAll />
-          </Grid>
-        </Grid>
+<div class="content">
+      <Grid container direction="row"   justify="center" alignItems="stretch" className="App" spacing={3}>
+      {filterChapters.map((chapter) => (
+        <div key={filterChapters.id}>
+        <ChapterCard {...chapter} />
+        </div>
+      ))}
+        <Grid container direction="column"   justify="center" alignItems="center" className="App" spacing={3}>
+      <AddAll />
+      </Grid>
+      </Grid>
       </div>
-    </div>
-  );
+      </div>
+  )
 }

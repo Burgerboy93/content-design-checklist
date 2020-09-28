@@ -33,7 +33,7 @@ export default function Structure() {
   });
 
     return(
-      <div class="structureContainer">
+      <div class="Structure">
         <Grid
           container
           spacing={4}
@@ -43,9 +43,7 @@ export default function Structure() {
         >
           <Typography variant="h5">Structure</Typography>
         </Grid>
-
-
-        <div id="content">
+        <div class="content">
         <Grid container direction="row"   justify="center" alignItems="stretch" className="App" spacing={3}>
         {filterChapters.map((chapter) => (
           <div key={filterChapters.id}>
@@ -55,7 +53,6 @@ export default function Structure() {
         <Grid container direction="column"   justify="center" alignItems="center" className="App" spacing={3}>
       <AddAll />
       </Grid>
-
         </Grid>
         </div>
         </div>

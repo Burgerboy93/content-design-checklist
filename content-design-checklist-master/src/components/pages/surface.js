@@ -33,7 +33,7 @@ export default function Scope() {
   });
 
     return(
-      <div class="surfaceContainer">
+      <div class="Surface">
         <Grid
           container
           spacing={4}

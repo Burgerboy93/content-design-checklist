@@ -23,6 +23,7 @@ const useStyles = makeStyles({
   Card: {
     margin:'auto',
 
+
   }
 });
 
@@ -34,7 +35,7 @@ export default function Scope() {
   });
 
     return(
-      <div class="strategyContainer">
+      <div class="Strategy">
         <Grid
           container
           spacing={4}
@@ -44,7 +45,7 @@ export default function Scope() {
         >
           <Typography variant="h5">Strategy</Typography>
         </Grid>
-<div id="content">
+<div class="content">
         <Grid container direction="row"   justify="center" alignItems="stretch" className="App" spacing={3}>
         {filterChapters.map((chapter) => (
           <div key={filterChapters.id}>

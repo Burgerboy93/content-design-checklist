@@ -26,13 +26,14 @@ const useStyles = makeStyles({
   }
 });
 
-export default function Scope() {
+export default function Skeleton() {
   const classes = useStyles();
   const filterChapters = data.filter(category => {
     return category.category.includes("skeleton");
   });
+
     return(
-      <div class="skeletonContainer">
+      <div class="Skeleton">
         <Grid
           container
           spacing={4}
@@ -42,18 +43,16 @@ export default function Scope() {
         >
           <Typography variant="h5">Skeleton</Typography>
         </Grid>
-
-
-<div id="content">
+        <div class="content">
         <Grid container direction="row"   justify="center" alignItems="stretch" className="App" spacing={3}>
         {filterChapters.map((chapter) => (
           <div key={filterChapters.id}>
           <ChapterCard {...chapter} />
           </div>
         ))}
-          <Grid container direction="column"   justify="center" alignItems="center" className="App" spacing={3}>
-        <AddAll />
-        </Grid>
+        <Grid container direction="column"   justify="center" alignItems="center" className="App" spacing={3}>
+      <AddAll />
+      </Grid>
         </Grid>
         </div>
         </div>
