@@ -11,6 +11,7 @@ import Typography from '@material-ui/core/Typography';
 import AddAll from './addall';
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from '@material-ui/core/Checkbox';
+import {addToList, removeFromList } from './services/actions';
 
 
 const useStyles = makeStyles({
@@ -29,8 +30,9 @@ export default function ChapterCard({id, category, title, pointOne, pointTwo, po
   const [checked, setChecked] = React.useState();
 
 
-    const handleChange = (event) => {
-      console.log({title});
+    const handleChange = (event, id) => {
+      addToList(id);
+      console.log({title}, {id});
       setChecked(event.target.checked);
 
     };

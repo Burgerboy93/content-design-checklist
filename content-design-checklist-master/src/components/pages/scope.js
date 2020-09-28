@@ -1,17 +1,13 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
 import MediaCard from "../categoryCard";
-
 import Grid from "@material-ui/core/Grid";
-import {scopeData} from '../data/categoryData'
-import {chapterData} from '../data/scopeData'
-import ChapterCard from '../chaptercard';
-import AddAll from '../addall';
-import { makeStyles } from '@material-ui/core/styles';
-
+import { data } from "../data/chapterData";
+import ChapterCard from "../chaptercard";
+import AddAll from "../addall";
+import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
-
   root: {
     flexGrow: 1,
   },
@@ -24,44 +20,55 @@ const useStyles = makeStyles({
   },
 
   Card: {
-    margin:'auto',
-
-  }
-
-
+    margin: "auto",
+  },
 });
-
-
 
 export default function Scope() {
   const classes = useStyles();
-    return(
-      <div class="scopeContainer">
-        <Grid
-          container
-          spacing={4}
-          direction="column"
-          alignItems="center"
-          justify="center"
-        >
-          <Typography variant="h5">Scope</Typography>
-          <MediaCard {...scopeData}/>
-        </Grid>
+  const filterChapters = data.filter((category) => {
+    return category.category.includes("scope");
+  });
 
-
-<div id="content">
-
-        <Grid container direction="row"   justify="center" alignItems="stretch" className="App" spacing={3}>
-        {chapterData.map((chapter) =>(
-          <ChapterCard {...chapter} />
-        ))}
-
-        <Grid container direction="column"   justify="center" alignItems="center" className="App" spacing={3}>
-      <AddAll />
+  return (
+    <div>
+      <Grid
+        container
+        spacing={4}
+        direction="column"
+        alignItems="center"
+        justify="center"
+      >
+        <Typography variant="h5">Scope</Typography>
       </Grid>
 
+      <div id="content">
+        <Grid
+          container
+          direction="row"
+          justify="center"
+          alignItems="stretch"
+          className="App"
+          spacing={3}
+        >
+          {filterChapters.map((chapter) => (
+            <div key={filterChapters.id}>
+              <ChapterCard {...chapter} />
+            </div>
+          ))}
+
+          <Grid
+            container
+            direction="column"
+            justify="center"
+            alignItems="center"
+            className="App"
+            spacing={3}
+          >
+            <AddAll />
+          </Grid>
         </Grid>
-        </div>
-        </div>
-    )
+      </div>
+    </div>
+  );
 }
