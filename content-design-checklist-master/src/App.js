@@ -8,6 +8,7 @@ import Scope from "./components/pages/scope";
 import Skeleton from "./components/pages/skeleton";
 import Structure from "./components/pages/structure";
 import Surface from "./components/pages/surface";
+import Checklist from "./components/pages/checklist";
 
 function App() {
 
@@ -38,6 +39,9 @@ function App() {
     </Route>
     <Route path="/surface">
       <Surface />
+    </Route>
+    <Route path="/checklist">
+      <Checklist />
     </Route>
     </Switch>
     </Router>

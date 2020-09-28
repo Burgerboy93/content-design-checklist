@@ -1,9 +1,7 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
-import MediaCard from "../categoryCard";
 import Grid from "@material-ui/core/Grid";
-import {surfaceData} from '../data/categoryData'
-import {chapterData} from '../data/surfaceData'
+import {data} from '../data/chapterData';
 import ChapterCard from '../chaptercard';
 import AddAll from '../addall';
 import { makeStyles } from '@material-ui/core/styles';
@@ -30,6 +28,10 @@ const useStyles = makeStyles({
 
 export default function Scope() {
   const classes = useStyles();
+  const filterChapters = data.filter(category => {
+    return category.category.includes("surface");
+  });
+
     return(
       <div>
         <Grid
@@ -40,12 +42,13 @@ export default function Scope() {
           justify="center"
         >
           <Typography variant="h5">Surface</Typography>
-          <MediaCard {...surfaceData}/>
         </Grid>
         <div id="content">
         <Grid container direction="row"   justify="center" alignItems="stretch" className="App" spacing={3}>
-        {chapterData.map((chapter) =>(
+        {filterChapters.map((chapter) => (
+          <div key={filterChapters.id}>
           <ChapterCard {...chapter} />
+          </div>
         ))}
         <Grid container direction="column"   justify="center" alignItems="center" className="App" spacing={3}>
       <AddAll />
