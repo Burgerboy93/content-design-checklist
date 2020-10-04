@@ -1,9 +1,4 @@
 
-html, body{
-  height:100%;
-
-}
-
 
 
 .Strategy{
@@ -55,7 +50,7 @@ html, body{
 
   width: 30%;
   margin: 0 auto;
-  overflow: hidden;
+
   min-width: 300px;
 }
 #content{

@@ -10,7 +10,7 @@ import AssignmentIcon from "@material-ui/icons/Assignment";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 0,
-    
+
   },
   assignmentButton: {
     marginRight: theme.spacing(2),
