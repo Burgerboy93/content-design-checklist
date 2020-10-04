@@ -24,7 +24,9 @@ export default function Home() {
             <Typography variant="h5">{category.title}</Typography>
             </div>
             <MediaCard {...category} />
+            <div class="downarrow">
             <img src={Downarrow} alt="Down arrow" />;
+            </div>
             </div>
             </div>
           </Grid>
