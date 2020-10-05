@@ -1,4 +1,68 @@
-a{
+.downarrow {
+    text-align: center;
+}
+
+a {
     color: inherit;
     text-decoration: none;
+}
+
+.Strategy {
+    width: 100%;
+    background-color: #2C43B8;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100%;
+}
+
+.Scope {
+    width: 100%;
+    background-color: #445BC1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100%;
+}
+
+.Structure {
+    width: 100%;
+    background-color: #6987D5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100%;
+}
+
+.Skeleton {
+    width: 100%;
+    background-color: #97BAEC;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100%;
+}
+
+.Surface {
+    width: 100%;
+    background-color: #BBDFFA;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100%;
+}
+
+#container {
+    justify-content: center;
+}
+
+.level {
+    width: 30%;
+    margin: 0 auto;
+    min-width: 300px;
+}
+
+#content {}
+
+.heading {
+    text-align: center;
+}
+
+.catHeading {
+    padding-top: 10px;
 }

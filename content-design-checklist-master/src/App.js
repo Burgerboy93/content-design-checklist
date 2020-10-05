@@ -1,28 +1,35 @@
-import React from "react";
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import React, {useReducer} from "react";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import ButtonAppBar from "./components/navbar.js";
-import TemporaryDrawer from "./components/drawer.js";
 import "./App.css";
-import { Domain } from "@material-ui/icons";
 import Home from "./components/pages/home";
 import Strategy from "./components/pages/strategy";
 import Scope from "./components/pages/scope";
 import Skeleton from "./components/pages/skeleton";
 import Structure from "./components/pages/structure";
 import Surface from "./components/pages/surface";
+import Checklist from "./components/pages/checklist";
+import ChecklistContext from './components/services/CheckListContext.js';
+import {reducer} from './components/services/useLocalStorage';
 
 function App() {
+  const [checklist, dispatch] = useReducer(reducer, []) 
+  console.log('Context', ChecklistContext);
+
   return (
+    <ChecklistContext.Provider value={{checklist, dispatch}}>
+
     <Router>
     <div className="App">
       <header className="App-header">
         <ButtonAppBar />
-        
+
+
       </header>
     </div>
     <Switch>
     <Route exact path="/">
-      <Home />
+      <Home/>
     </Route>
     <Route path="/strategy">
       <Strategy />
@@ -30,17 +37,21 @@ function App() {
     <Route path="/scope">
       <Scope />
     </Route>
-    <Route path="/structure">
-      <Structure />
-    </Route>
     <Route path="/skeleton">
       <Skeleton />
+    </Route>
+    <Route path="/structure">
+      <Structure />
     </Route>
     <Route path="/surface">
       <Surface />
     </Route>
+    <Route path="/checklist">
+      <Checklist />
+    </Route>
     </Switch>
     </Router>
+    </ChecklistContext.Provider>
   );
 }
 
