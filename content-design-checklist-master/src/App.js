@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useReducer} from "react";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import ButtonAppBar from "./components/navbar.js";
 import "./App.css";
@@ -9,16 +9,22 @@ import Skeleton from "./components/pages/skeleton";
 import Structure from "./components/pages/structure";
 import Surface from "./components/pages/surface";
 import Checklist from "./components/pages/checklist";
+import ChecklistContext from './components/services/CheckListContext.js';
+import {reducer} from './components/services/useLocalStorage';
+import addedAlert from "./components/alerts.js";
 
 function App() {
+  const [checklist, dispatch] = useReducer(reducer, []) 
+  console.log('Context', ChecklistContext);
 
   return (
+    <ChecklistContext.Provider value={{checklist, dispatch}}>
 
     <Router>
     <div className="App">
       <header className="App-header">
         <ButtonAppBar />
-
+      <addedAlert />
 
       </header>
     </div>
@@ -46,6 +52,7 @@ function App() {
     </Route>
     </Switch>
     </Router>
+    </ChecklistContext.Provider>
   );
 }
 

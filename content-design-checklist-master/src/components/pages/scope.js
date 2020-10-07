@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useReducer} from "react";
 import Typography from "@material-ui/core/Typography";
 import MediaCard from "../categoryCard";
 import Grid from "@material-ui/core/Grid";
@@ -23,6 +23,7 @@ const useStyles = makeStyles({
     margin: "auto",
   },
 });
+
 
 export default function Scope() {
   const classes = useStyles();

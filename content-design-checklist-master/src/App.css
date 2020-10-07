@@ -57,7 +57,9 @@ a {
     min-width: 300px;
 }
 
-#content {}
+.container {
+    padding: 30px;
+}
 
 .heading {
     text-align: center;

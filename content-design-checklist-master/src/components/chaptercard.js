@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useContext} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import {Link} from "react-router-dom";
 import Card from '@material-ui/core/Card';
@@ -11,8 +11,9 @@ import Typography from '@material-ui/core/Typography';
 import AddAll from './addall';
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from '@material-ui/core/Checkbox';
-import {addToList, removeFromList } from './services/actions';
-
+import { ACTIONS } from './services/useLocalStorage';
+import ChecklistContext from './services/CheckListContext.js';
+import addedAlert from './alerts';
 
 const useStyles = makeStyles({
   root: {
@@ -25,16 +26,25 @@ const useStyles = makeStyles({
   },
 });
 
-export default function ChapterCard({id, category, title, pointOne, pointTwo, pointThree, link}) {
+export default function ChapterCard(props) {
 
+  const { id, category, title, pointOne, pointTwo, pointThree, link } = props;
   const classes = useStyles();
-  const [checked, setChecked] = React.useState();
+  const [checked, setChecked] = React.useState(false);
+  const context = useContext(ChecklistContext) 
+  console.log('context', context);
+  const {checklist, dispatch} = context;
+  console.log('render card', checklist);
 
-
-    const handleChange = (event, id) => {
-      addToList(id);
-      console.log({title}, {id});
+    function handleChange (event, value) {
+//      const value = event.target.value;
+      console.log('Button clicked', event.target);
+      console.log('value', value);
+      const action = value ? ACTIONS.ADD_TO_CHECKLIST : ACTIONS.REMOVE_CHAPTER;
+      console.log('Action', action);
+      dispatch({ type: action , payload: {id, title, category}})
       setChecked(event.target.checked);
+      addedAlert();
 
     };
 

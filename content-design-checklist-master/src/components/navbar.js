@@ -40,7 +40,9 @@ export default function ButtonAppBar() {
               color="inherit"
               aria-label="menu"
             >
+              <Link to='/checklist'>
               <AssignmentIcon />
+              </Link>
             </IconButton>
           </div>
         </Toolbar>
