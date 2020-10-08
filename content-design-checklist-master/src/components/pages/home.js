@@ -25,7 +25,7 @@ export default function Home() {
             </div>
             <MediaCard {...category} />
             <div class="downarrow">
-            <img src={Downarrow} alt="Down arrow" />;
+            <img src={Downarrow} alt="Down arrow" />
             </div>
             </div>
             </div>

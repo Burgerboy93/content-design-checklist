@@ -2,6 +2,18 @@
     text-align: center;
 }
 
+
+.MuiCard-root{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.MuiCardContent-root{
+  
+}
+
+
 a {
     color: inherit;
     text-decoration: none;

@@ -14,6 +14,9 @@ import Checkbox from '@material-ui/core/Checkbox';
 import { ACTIONS } from './services/useLocalStorage';
 import ChecklistContext from './services/CheckListContext.js';
 import addedAlert from './alerts';
+import Box from '@material-ui/core/Box';
+import { flexbox } from "@material-ui/system";
+
 
 const useStyles = makeStyles({
   root: {
@@ -24,6 +27,11 @@ const useStyles = makeStyles({
   media: {
     height: 140,
   },
+
+  cardContent: {
+    fontSize: 60,
+  },
+
 });
 
 export default function ChapterCard(props) {
@@ -31,7 +39,7 @@ export default function ChapterCard(props) {
   const { id, category, title, pointOne, pointTwo, pointThree, link } = props;
   const classes = useStyles();
   const [checked, setChecked] = React.useState(false);
-  const context = useContext(ChecklistContext) 
+  const context = useContext(ChecklistContext)
   console.log('context', context);
   const {checklist, dispatch} = context;
   console.log('render card', checklist);
@@ -60,7 +68,7 @@ export default function ChapterCard(props) {
           <Typography gutterBottom variant="h6" component="h2">
             {title}
           </Typography>
-          <Typography variant="body2" color="textPrimary" component="p">
+          <Typography variant="body2" color="textPrimary" component="p" >
             {pointOne}
           </Typography>
           <Typography variant="body2" color="textPrimary" component="p">
@@ -71,13 +79,17 @@ export default function ChapterCard(props) {
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions>
+
+      <CardActions  style={{display: 'flex', justifyContent: 'space-between'}}>
+
       <Link to ={link}>
         <Button size="small" color="primary">
           Learn More
         </Button>
         </Link>
+
         <FormControlLabel
+
           control={
             <Checkbox
               checked={checked}
@@ -88,6 +100,7 @@ export default function ChapterCard(props) {
           }
           label={"Add to checklist"}
         />
+
       </CardActions>
     </Card>
   );

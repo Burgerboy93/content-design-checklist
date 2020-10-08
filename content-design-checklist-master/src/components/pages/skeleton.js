@@ -22,7 +22,6 @@ const useStyles = makeStyles({
 
   Card: {
     margin:'auto',
-
   }
 });
 
@@ -36,7 +35,6 @@ export default function Skeleton() {
       <div class="Skeleton">
         <Grid
           container
-          
           direction="column"
           alignItems="center"
           justify="center"
