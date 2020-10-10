@@ -1,0 +1,124 @@
+/* Footer Container */
+.footer-container {
+    background-color: #3c4875;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* About Text */
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    color: #fff;
+  }
+
+  .about > p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+
+  .about-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
+  }
+  
+  .about-items {
+    display: inline;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 16px;
+    text-align: justify;
+    box-sizing: border-box;
+  }
+  
+  .about-items h2 {
+    margin-bottom: 16px;
+  }
+  
+  .about-items > h2 {
+    color: #fff;
+  }
+
+  /* Navigation Links */
+  .navigation-footer {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navigation-footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    width: 90%;
+    max-width: 1000px;
+    margin: 10px auto 0 auto;
+  }
+  
+   .navigation-items {
+    display: inline;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 16px;
+    text-align: center;
+    box-sizing: border-box;
+    color: #fff;
+  }
+  
+  .navigation-footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    font-size: 20px;
+  }
+  
+  .navigation-footer a:hover {
+    color: #7e85c0;
+    transition: 0.3s ease-out;
+    
+  }
+  
+  /* Copyright */
+  .copyright {
+    max-width: 1000px;
+    width: 100%;
+  }
+
+  .copyright-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
+  }
+  
+  .footer-copyright {
+    color: #fff;
+    margin: 16px;
+  }
+  
+  @media screen and (max-width: 820px) {
+    .navigation-footer {
+      padding-top: 2rem;
+    }
+  
+    .navigation-footer-wrap {
+      flex-direction: column;
+    }
+  
+    .copyright-wrap {
+      flex-direction: column;
+    }
+  }
+  

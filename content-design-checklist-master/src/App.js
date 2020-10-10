@@ -12,6 +12,7 @@ import Checklist from "./components/pages/checklist";
 import ChecklistContext from './components/services/CheckListContext.js';
 import {reducer} from './components/services/useLocalStorage';
 import addedAlert from "./components/alerts.js";
+import Footer from "./components/footer.js";
 
 function App() {
   const [checklist, dispatch] = useReducer(reducer, []) 
@@ -51,6 +52,7 @@ function App() {
       <Checklist />
     </Route>
     </Switch>
+    <Footer />
     </Router>
     </ChecklistContext.Provider>
   );

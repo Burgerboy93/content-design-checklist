@@ -8,41 +8,35 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import AddAll from './addall';
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import Checkbox from '@material-ui/core/Checkbox';
 
 
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
     margin: 20,
-    minWidth:250,
   },
   media: {
     height: 140,
   },
 });
 
-export default function MediaCard({title, summary, link, image}) {
+export default function MediaCard2({title, summary, link}) {
 
   const classes = useStyles();
-
-
 
   return (
     <Card className={classes.root} variant="outlined">
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image={image}
+          image=""
           title=""
         />
         <CardContent>
           <Typography gutterBottom variant="h6" component="h2">
             {title}
           </Typography>
-          <Typography variant="body2" color="textPrimary" component="p">
+          <Typography variant="body2" color="textSecondary" component="p">
             {summary}
           </Typography>
         </CardContent>
@@ -53,7 +47,6 @@ export default function MediaCard({title, summary, link, image}) {
           Learn More
         </Button>
         </Link>
-
       </CardActions>
     </Card>
   );
