@@ -53,7 +53,7 @@ export default function Structure() {
           </div>
         ))}
         <Grid container direction="column"   justify="center" alignItems="center" className="App">
-      <AddAll />
+      
       </Grid>
         </Grid>
         </div>

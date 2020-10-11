@@ -38,7 +38,7 @@ export default function Scope() {
       <div class="Strategy">
         <Grid
         container
-        
+
         direction="column"
         alignItems="center"
         justify="center"
@@ -55,7 +55,7 @@ export default function Scope() {
           </div>
         ))}
         <Grid container direction="column"   justify="center" alignItems="center" className="App" >
-      <AddAll />
+      
       </Grid>
         </Grid>
         </div>

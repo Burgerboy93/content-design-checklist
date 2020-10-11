@@ -22,7 +22,7 @@ const useStyles = makeStyles({
   root: {
     maxWidth: 345,
     margin: 20,
-    height:450,
+    height:300,
   },
   media: {
     height: 140,
@@ -59,15 +59,11 @@ export default function ChapterCard(props) {
   return (
     <Card className={classes.root} variant="outlined">
       <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image=""
-          title=""
-        />
         <CardContent>
           <Typography gutterBottom variant="h6" component="h2">
             {title}
           </Typography>
+          <div class="points">
           <Typography variant="body2" color="textPrimary" component="p" >
             {pointOne}
           </Typography>
@@ -77,6 +73,7 @@ export default function ChapterCard(props) {
           <Typography variant="body2" color="textPrimary" component="p">
             {pointThree}
           </Typography>
+          </div>
         </CardContent>
       </CardActionArea>
 
