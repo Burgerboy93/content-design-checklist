@@ -4,7 +4,6 @@ import MediaCard from "../categoryCard";
 import Grid from "@material-ui/core/Grid";
 import { data } from "../data/chapterData";
 import ChapterCard from "../chaptercard";
-import AddAll from "../addall";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({

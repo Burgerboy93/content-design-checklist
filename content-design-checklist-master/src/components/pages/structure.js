@@ -3,7 +3,6 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import {data} from '../data/chapterData';
 import ChapterCard from '../chaptercard';
-import AddAll from '../addall';
 import { makeStyles } from '@material-ui/core/styles';
 
 

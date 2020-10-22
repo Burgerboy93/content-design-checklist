@@ -11,7 +11,6 @@ import Surface from "./components/pages/surface";
 import Checklist from "./components/pages/checklist";
 import ChecklistContext from './components/services/CheckListContext.js';
 import {reducer} from './components/services/useLocalStorage';
-import addedAlert from "./components/alerts.js";
 import Footer from "./components/footer.js";
 
 function App() {
