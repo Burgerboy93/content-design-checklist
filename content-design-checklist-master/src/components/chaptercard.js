@@ -17,7 +17,7 @@ const useStyles = makeStyles({
   root: {
     maxWidth: 345,
     margin: 20,
-    height:450,
+    height:300,
   },
   media: {
     height: 140,
@@ -29,14 +29,14 @@ export default function ChapterCard(props) {
   const { id, category, title, pointOne, pointTwo, pointThree, link } = props;
   const classes = useStyles();
   const [checked, setChecked] = React.useState(false);
-  const context = useContext(ChecklistContext) 
+  const context = useContext(ChecklistContext)
   console.log('context', context);
   const {checklist, dispatch} = context;
   console.log('render card', checklist);
 
     function handleChange (event, value) {
 //      const value = event.target.value;
-      
+
       const action = value ? ACTIONS.ADD_TO_CHECKLIST : ACTIONS.REMOVE_CHAPTER;
       dispatch({ type: action , payload: {id, title, category}})
       setChecked(event.target.checked);
@@ -46,11 +46,7 @@ export default function ChapterCard(props) {
   return (
     <Card className={classes.root} variant="outlined">
       <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image=""
-          title=""
-        />
+
         <CardContent>
           <Typography gutterBottom variant="h6" component="h2">
             {title}
