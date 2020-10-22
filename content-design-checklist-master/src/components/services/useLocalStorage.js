@@ -8,11 +8,12 @@ export const ACTIONS = {
 
 export const checklistChapters = []
 
+
+/* creation of the useReducer hook to handle adding and removing
+   items from the checklist */
 export function reducer(checklistChapters, action) {
-    console.log("current state", checklistChapters);
     switch (action.type) {
         case ACTIONS.ADD_TO_CHECKLIST:
-            console.log("Adding to checklist", action);
             return [
                 ...checklistChapters,
                 newChapter(

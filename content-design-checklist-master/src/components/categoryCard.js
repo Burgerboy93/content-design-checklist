@@ -32,6 +32,7 @@ export default function MediaCard({title, summary, link, image}) {
 
   return (
     <Card className={classes.root} variant="outlined">
+      <Link to ={link}>
       <CardActionArea>
         <CardMedia
           className={classes.media}
@@ -47,6 +48,7 @@ export default function MediaCard({title, summary, link, image}) {
           </Typography>
         </CardContent>
       </CardActionArea>
+      </Link>
       <CardActions>
       <Link to ={link}>
         <Button size="small" color="primary">

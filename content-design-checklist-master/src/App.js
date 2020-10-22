@@ -15,10 +15,13 @@ import addedAlert from "./components/alerts.js";
 import Footer from "./components/footer.js";
 
 function App() {
+  /* Add the reducer to the application */
+
   const [checklist, dispatch] = useReducer(reducer, []) 
-  console.log('Context', ChecklistContext);
 
   return (
+    /* Set the context around the entire application so the checklist can be edited from all areas */
+
     <ChecklistContext.Provider value={{checklist, dispatch}}>
 
     <Router>
