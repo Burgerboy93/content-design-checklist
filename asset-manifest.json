@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/content-design-checklist/static/css/main.2e1db890.chunk.css",
+    "main.js": "/content-design-checklist/static/js/main.f8b17171.chunk.js",
+    "main.js.map": "/content-design-checklist/static/js/main.f8b17171.chunk.js.map",
+    "runtime-main.js": "/content-design-checklist/static/js/runtime-main.d5127bd9.js",
+    "runtime-main.js.map": "/content-design-checklist/static/js/runtime-main.d5127bd9.js.map",
+    "static/js/2.2abaeb32.chunk.js": "/content-design-checklist/static/js/2.2abaeb32.chunk.js",
+    "static/js/2.2abaeb32.chunk.js.map": "/content-design-checklist/static/js/2.2abaeb32.chunk.js.map",
+    "index.html": "/content-design-checklist/index.html",
+    "precache-manifest.5c7cc68323ce10012e78a992ccf2b91c.js": "/content-design-checklist/precache-manifest.5c7cc68323ce10012e78a992ccf2b91c.js",
+    "service-worker.js": "/content-design-checklist/service-worker.js",
+    "static/css/main.2e1db890.chunk.css.map": "/content-design-checklist/static/css/main.2e1db890.chunk.css.map",
+    "static/js/2.2abaeb32.chunk.js.LICENSE.txt": "/content-design-checklist/static/js/2.2abaeb32.chunk.js.LICENSE.txt",
+    "static/media/scope.svg": "/content-design-checklist/static/media/scope.eb7c7069.svg",
+    "static/media/skeleton.svg": "/content-design-checklist/static/media/skeleton.b1ce9e7c.svg",
+    "static/media/strategy.svg": "/content-design-checklist/static/media/strategy.dcc34845.svg",
+    "static/media/structure.svg": "/content-design-checklist/static/media/structure.cac928cf.svg",
+    "static/media/surface.svg": "/content-design-checklist/static/media/surface.53a4556f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d5127bd9.js",
+    "static/js/2.2abaeb32.chunk.js",
+    "static/css/main.2e1db890.chunk.css",
+    "static/js/main.f8b17171.chunk.js"
+  ]
+}
