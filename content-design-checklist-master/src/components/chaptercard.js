@@ -67,11 +67,9 @@ export default function ChapterCard(props) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-      <Link to ={link}>
-        <Button size="small" color="primary">
+        <Button size="small" color="primary" disabled ="true">
           Learn More
         </Button>
-        </Link>
         <FormControlLabel
           control={
             <Checkbox

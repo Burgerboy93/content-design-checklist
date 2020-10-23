@@ -29,25 +29,25 @@ function App() {
       </header>
     </div>
     <Switch>
-    <Route exact path="/">
+    <Route exact path="/content-design-checklist">
       <Home/>
     </Route>
-    <Route path="/strategy">
+    <Route path="/content-design-checklist/strategy">
       <Strategy />
     </Route>
-    <Route path="/scope">
+    <Route path="/content-design-checklist/scope">
       <Scope />
     </Route>
-    <Route path="/skeleton">
+    <Route path="/content-design-checklist/skeleton">
       <Skeleton />
     </Route>
-    <Route path="/structure">
+    <Route path="/content-design-checklist/structure">
       <Structure />
     </Route>
-    <Route path="/surface">
+    <Route path="/content-design-checklist/surface">
       <Surface />
     </Route>
-    <Route path="/checklist">
+    <Route path="/content-design-checklist/checklist">
       <Checklist />
     </Route>
     </Switch>

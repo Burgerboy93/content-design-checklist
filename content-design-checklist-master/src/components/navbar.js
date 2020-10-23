@@ -29,7 +29,7 @@ export default function ButtonAppBar() {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
-            <Link to ='/'>
+            <Link to ='/content-design-checklist'>
             Digital Content Design
             </Link>
           </Typography>
@@ -40,7 +40,7 @@ export default function ButtonAppBar() {
               color="inherit"
               aria-label="menu"
             >
-              <Link to='/checklist'>
+              <Link to='/content-design-checklist/checklist'>
               <AssignmentIcon />
               </Link>
             </IconButton>
